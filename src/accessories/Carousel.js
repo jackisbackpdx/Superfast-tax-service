@@ -30,12 +30,17 @@ const EmblaCarousel = (props) => {
                 <span>{index + 1}</span>
               </div>
               <div className='image-container'>
-                <p className={`overlay-text${index}`}>{textByIndex(index)}</p>
+
+                <div className={`backdrop${index + 1}`}>
+                  <p className={`overlay-text${index + 1}`}>{textByIndex(index)}</p>
+                </div>
+
                 <img
                   className="embla__slide__img"
                   src={imageByIndex(index)}
                   alt="Your alt text"
                 />
+
               </div>
             </div>
           ))}
