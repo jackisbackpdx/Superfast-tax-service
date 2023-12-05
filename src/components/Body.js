@@ -12,7 +12,7 @@ function Body() {
     <div>
         <Carousel slides={SLIDES} options={OPTIONS}/>
         <div>
-          <h1>Visit us at one of our 4 locations!</h1>
+          <h1>Visit us at one of our 3 locations!</h1>
         </div>
         <iframe src="https://snazzymaps.com/embed/547741" 
         title='Locations'
