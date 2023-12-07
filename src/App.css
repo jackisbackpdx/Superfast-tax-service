@@ -37,8 +37,9 @@ body {
   width: 100%;
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  justify-self: center;
   background-color: #999999;
 }
 
@@ -51,11 +52,12 @@ body {
   padding: 0;
 }
 
-@media (min-width: 490) {
+@media screen and (min-width: 500px) {
+
   .header-logo {
     justify-self: center;
     align-self: center;
-    margin-left: 44%;
+    margin-left: 46%;
   }
 }
 
@@ -70,6 +72,7 @@ ul {
 .list {
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
   justify-content: center;
   height: 100%;
   width: 100%;
@@ -84,7 +87,7 @@ ul {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 19%;
+  width: 15%;
   justify-self: flex-end;
   font-style: bold;
   font-size: 25px;
@@ -161,6 +164,15 @@ ul {
   left: 0;
   border-radius: 10px;
   color: black;
+  box-shadow: -5px 7px 5px 0px rgba(0,0,0,0.75);
+  transition: .2s;
+}
+.call:hover {
+  box-shadow: -8px 11px 10px 0px rgba(0,0,0,0.75);
+}
+
+.number {
+  margin-top: 40px;
 }
 
 .reviews {
@@ -170,6 +182,17 @@ ul {
   margin-right: -2vw;
   position: relative;
   border-radius: 10px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  padding-top: 5px;
+  box-shadow: -5px 7px 5px 0px rgba(0,0,0,0.75);
+  transition: .2s
+}
+.reviews:hover {
+  box-shadow: -8px 11px 10px 0px rgba(0,0,0,0.75);
 }
 
 .phone {
@@ -219,7 +242,7 @@ ul {
 
 .body {
   width: 70vw;
-  height: 85vh;
+  height: 87vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -266,14 +289,46 @@ label {
   
 }
 
-.widget {
-  display: inline;
-}
-
 .location-map {
   border-radius: 5px;
 }
+.review-card {
+  width:25vw;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding-right: 5px;
+  font-family: Arial, sans-serif;
+}
 
-script {
-  display: inline;
+.bottom-review img {
+  width: 40px;
+  height: 40px;
+}
+
+.top-review img {
+  width: 100px;
+  height: 25px;
+}
+
+.top-review {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.bottom-review {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+.bottom-review p {
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.review-text {
+  text-align: left;
+  margin-left: 10px;
+  font-weight: 540;
 }

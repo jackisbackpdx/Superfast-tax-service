@@ -1,7 +1,10 @@
 import Carousel from '../accessories/Carousel';
 import Call from './Call';
-import Reviews from './Reviews';
 import React from 'react';
+
+
+import Review from './Review';
+import reviewData from '../assets/review-data';
 
 const OPTIONS = { containScroll: 'trimSnaps' }
 const SLIDE_COUNT = 3
@@ -21,7 +24,11 @@ function Body() {
         </iframe>
         <div className='action'>
           <Call/>
-          <Reviews/>
+          <div className='reviews'>
+            {reviewData.map(item => (
+              Review(item)
+            ))}
+          </div>
         </div>
     </div>
   )

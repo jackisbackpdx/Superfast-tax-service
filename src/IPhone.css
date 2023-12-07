@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .App {
         text-align: center;
         font-family: 'Lexend', sans-serif;
@@ -172,7 +172,7 @@
         height: 500px;
       }
       
-}
+
 
 /* -------------------------------------------- Embla Carousel ------------------------------------------ */
 
@@ -345,4 +345,4 @@
     background-color: rgb(153, 153, 153, 0.7)
   }
 
-  
+}
