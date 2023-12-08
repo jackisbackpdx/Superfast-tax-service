@@ -528,7 +528,7 @@ justify-content: flex-start;
 .services {
   width: 70vw;
   border-radius: 10px;
-  background-color: rgb(167, 38, 38);
+  background-color: #999999;
   display: flex;
   flex-direction: column;
   align-items: center;

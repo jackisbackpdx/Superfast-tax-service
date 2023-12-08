@@ -24,7 +24,7 @@ export default function Contact() {
   if(location === '(360) 424-5124') {
     Map = MtVernonMap;
   }
-  if(location === '(425)-353-2664') {
+  if(location === '(509) 582-0320') {
     Map = EverettMap;
   }
   if(location === '(509) 527-8980') {
@@ -58,7 +58,7 @@ export default function Contact() {
         setPublicKey('gx8lLP79wefnG8pRg');
         Map = MtVernonMap;
       }
-      if(e.target.value === '(425)-353-2664') {
+      if(e.target.value === '(509) 582-0320') {
         setService_ID('service_zjkdxl5');
         setTemplate_ID('template_j9j9qvi');
         setPublicKey('NwTjMqLzW-XLMd845');
@@ -87,7 +87,7 @@ export default function Contact() {
             <div class="select" >
               <select name='location' onChange={handleChange}>
                 <option value='(360) 424-5124'>Mt. Vernon</option>
-                <option value='(425)-353-2664' >Everett</option>
+                <option value='(509) 582-0320' >Kennewick</option>
                 <option value='(509) 527-8980'>Walla Walla</option>
               </select>
             </div>

@@ -43,7 +43,13 @@ function Body() {
           className='map'
           width="100%" height="600px" style={{border: 'none;'}}>
           </iframe>
-        ) : null}
+        ) : <iframe src="https://snazzymaps.com/embed/553302"
+                    title='location'
+                    width="100%"
+                    height="600px" 
+                    style={{border: 'none;'}}>
+                    </iframe>
+      }
         <div className='action'>
           <div>
             <h3>Give us a call!</h3>

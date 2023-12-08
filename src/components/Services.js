@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 export default function Services() {
 
@@ -43,7 +44,7 @@ export default function Services() {
       </div>
 
       <p>
-        <a className='service-contact' href='/contact'>Contact us</a> today to learn more about how we can tailor our services to meet your specific tax needs.
+        <Link className='service-contact' to='/contact'>Contact us</Link> today to learn more about how we can tailor our services to meet your specific tax needs.
       </p>
     </div>
   );

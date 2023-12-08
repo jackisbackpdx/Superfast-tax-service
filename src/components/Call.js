@@ -29,7 +29,7 @@ class Call extends React.Component{
           <div class="select">
             <select onChange={this.handleChange}>
               <option value='(360) 424-5124'>Mt. Vernon</option>
-              <option value='(425)-353-2664' >Everett</option>
+              <option value='(509) 582-0320' >Kennewick</option>
               <option value='(509) 527-8980'>Walla Walla</option>
             </select>
           </div>
