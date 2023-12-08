@@ -16,6 +16,8 @@ export default function Contact() {
   const [template_ID, setTemplate_ID] = useState('template_99swv0w');
   const [publicKey, setPublicKey] = useState('gx8lLP79wefnG8pRg')
 
+  window.scrollTo(0,0)
+  
   let Map;
 
   if(location === '') {
