@@ -4,7 +4,7 @@ export default function Services() {
 
   return (
     <div className='services'>
-      <p>Welcome to our tax preparation services page. We specialize in the following areas:</p>
+      <p className='services-opener'>Welcome to our tax preparation services page. We specialize in the following areas:</p>
 
       <div className="service1">
         <div className='services-img'>

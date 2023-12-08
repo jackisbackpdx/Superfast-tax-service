@@ -30,7 +30,7 @@ function Body() {
 
 
   return (
-    <div>
+    <div className='app'>
         {/* <Carousel slides={SLIDES} options={OPTIONS}/> */}
         {/* <OpeningInfo/> */}
         <OpeningImage/>
