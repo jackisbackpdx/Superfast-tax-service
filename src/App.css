@@ -312,23 +312,8 @@ label {
 
 .location-map {
   border-radius: 5px;
-  width: 100%;
-  height: 500px;
-  margin-bottom: 24px;
-}
-.location-map-num {
   width: 45%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 600px;
-  background-color: #999999;  
-}
-.second-number {
-  margin-top: -30px;
-  margin-bottom: 40px;
-
+  height: 500px;
 }
 
 /*--------------------------------------------------- Reviews ----------------------------------------------------------  */

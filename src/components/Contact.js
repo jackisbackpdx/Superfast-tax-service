@@ -139,12 +139,9 @@ export default function Contact() {
           <input type="submit" className='submit' value="Send" />
         </form>
 
-      <div className='location-map-num'>
-          <a className='actual-number second-number' href={'tel:' + location}>
-          <h3 >{location}</h3> 
-          </a>
+     
         <Map className='location-map'/>
-      </div>
+      
 
       </div>
     )
