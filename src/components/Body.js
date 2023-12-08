@@ -3,6 +3,7 @@ import Call from './Call';
 import React, { useRef } from 'react';
 
 import OpeningImage from './OpeningImage';
+import {Link} from 'react-router-dom'
 
 import Review from './Review';
 import reviewData from '../assets/review-data';
@@ -54,7 +55,7 @@ function Body() {
           <div>
             <h3>Give us a call!</h3>
             <Call/>
-            <a className='button-link' href="/contact"><button class="button-4">Contact Us</button></a>
+            <Link to='/contact' className='button-link'><button class="button-4">Contact Us</button></Link>
           </div>
           
           <div>
