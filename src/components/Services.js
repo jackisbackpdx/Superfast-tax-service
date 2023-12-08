@@ -4,7 +4,6 @@ export default function Services() {
 
   return (
     <div className='services'>
-      <h2>Our Services</h2>
       <p>Welcome to our tax preparation services page. We specialize in the following areas:</p>
 
       <div className="service1">
@@ -44,7 +43,7 @@ export default function Services() {
       </div>
 
       <p>
-        Contact us today to learn more about how we can tailor our services to meet your specific tax needs.
+        <a className='service-contact' href='/contact'>Contact us</a> today to learn more about how we can tailor our services to meet your specific tax needs.
       </p>
     </div>
   );
