@@ -6,12 +6,13 @@
     width: 70vw;
     margin-top: 10px;
     border-radius: 10px;
-    font-family: Arial, sans-serif
+    font-family: Arial, sans-serif;
   }
   .embla__viewport {
     overflow: hidden;
     border-radius: 10px;
   }
+  
   .embla__container {
     backface-visibility: hidden;
     display: flex;
@@ -31,6 +32,8 @@
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
+    border: 1px solid black;
+
   }
   .embla__slide__number {
     width: 4.6rem;
@@ -124,7 +127,7 @@
     position: absolute;
     top: 80px; 
     display: block;
-    left: 220px; 
+    left: 230px; 
     width: 400px;
     text-wrap: wrap;
     transform: translate(-50%, -50%); 
@@ -133,14 +136,15 @@
     padding: 10px 20px; 
     font-size: 20px; 
     text-align: center;
-    background-color: rgb(153, 153, 153, 0.7)
-
+    background-color: rgb(153, 153, 153, 0.7);
+    border: 10px solid rgba(153,153,153,.05);
+    border-radius: 5px;
   }
 
   .backdrop2 {
     position: absolute;
     top: 70px; 
-    left: 50%;
+    left: 52%;
     width: 400px;
     text-wrap: wrap;
     transform: translate(-50%, -50%); 
@@ -148,20 +152,22 @@
     padding: 10px 20px; 
     font-size: 20px; 
     text-align: center;
-    background-color: rgb(153, 153, 153, 0.7)
+    background-color: rgb(153, 153, 153, 0.7);
+    border-radius: 5px;
   }
 
   .backdrop3 {
     position: absolute;
     top: 70px; 
-    left: 80%;
+    left: 81.52%;
     width: 400px;
     transform: translate(-50%, -50%); 
     color: #fff; 
     padding: 10px 20px; 
     font-size: 20px; 
     text-align: center;
-    background-color: rgb(153, 153, 153, 0.7)
+    background-color: rgb(153, 153, 153, 0.7);
+    border-radius: 5px;
   }
 
   

@@ -15,7 +15,9 @@ function Navbar() {
      
 
             <div className='header-links'>
-              <li className='about'>About</li>
+              <Link className='link' to='/services'>
+                <li className='about'>Services</li>
+              </Link>
               
               <Link className='link' to='/contact'>
                 <li className='contact'>Contact</li>

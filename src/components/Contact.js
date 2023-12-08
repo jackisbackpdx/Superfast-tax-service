@@ -1,13 +1,13 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 
-import MtVernonMap from '../accessories/MtVernonMap'
-import EverettMap from '../accessories/EverettMap';
-import KennewickMap from '../accessories/KennewickMap';
+import MtVernonMap from '../maps/MtVernonMap'
+import EverettMap from '../maps/EverettMap';
+import WallaWallaMap from '../maps/WallaWallaMap';
 
 export default function Contact() {
 
-  const [location, setLocation] = useState('')
+  const [location, setLocation] = useState('(360) 424-5124')
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
@@ -27,8 +27,8 @@ export default function Contact() {
   if(location === '(425)-353-2664') {
     Map = EverettMap;
   }
-  if(location === '(509) 582-0320') {
-    Map = KennewickMap;
+  if(location === '(509) 527-8980') {
+    Map = WallaWallaMap;
   }
 
   const form = useRef();
@@ -88,7 +88,7 @@ export default function Contact() {
               <select name='location' onChange={handleChange}>
                 <option value='(360) 424-5124'>Mt. Vernon</option>
                 <option value='(425)-353-2664' >Everett</option>
-                <option value='(509) 582-0320'>Kennewick</option>
+                <option value='(509) 527-8980'>Walla Walla</option>
               </select>
             </div>
           </div> 
@@ -100,16 +100,18 @@ export default function Contact() {
               name='user_name'
               value={name}
               onChange={handleChange}
+              required='true'
               /> 
           </label>
 
           <label for='email'>Email: 
             <input 
-              type='text'
+              type='email'
               className='email'
               name='user_email'
               value={email}
               onChange={handleChange}
+              required='true'
               /> 
           </label>
 
@@ -120,6 +122,7 @@ export default function Contact() {
               name='subject'
               value={subject}
               onChange={handleChange}
+              required='true'
               /> 
           </label>
 
@@ -130,12 +133,18 @@ export default function Contact() {
               name='message'
               value={message}
               onChange={handleChange}
+              required='true'
               /> 
           </label>
           <input type="submit" className='submit' value="Send" />
         </form>
 
+      <div className='location-map-num'>
+          <a className='actual-number second-number' href={'tel:' + location}>
+          <h3 >{location}</h3> 
+          </a>
         <Map className='location-map'/>
+      </div>
 
       </div>
     )
