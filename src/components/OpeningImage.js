@@ -5,7 +5,7 @@ export default function OpeningImage() {
     <div className='image-container'>
         <h1>
             <p>
-            Professional and personalized Tax Preparation Services in Washington
+            Professional and Personalized Tax Preparation Services in Washington
             </p> 
         </h1>
     </div>
