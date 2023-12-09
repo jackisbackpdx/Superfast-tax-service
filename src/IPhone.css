@@ -1,4 +1,13 @@
 @media screen and (max-width: 480px) {
+    html, body {
+      overflow-x: hidden;
+    }
+
+    body {
+      position: relative;
+    }
+
+
     .App {
         text-align: center;
         font-family: 'Lexend', sans-serif;
@@ -6,7 +15,6 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        overflow-x: none;
       }
 
 
