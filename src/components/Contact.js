@@ -1,5 +1,7 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
+import { useForm, ValidationError } from '@formspree/react';
+
 
 import MtVernonMap from '../maps/MtVernonMap'
 import EverettMap from '../maps/EverettMap';
@@ -10,11 +12,13 @@ export default function Contact() {
   const [location, setLocation] = useState('(360) 424-5124')
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [service_ID, setService_ID] = useState('service_p1fzgbd');
   const [template_ID, setTemplate_ID] = useState('template_99swv0w');
-  const [publicKey, setPublicKey] = useState('gx8lLP79wefnG8pRg')
+  const [publicKey, setPublicKey] = useState('gx8lLP79wefnG8pRg');
+  const [state, handleSubmit] = useForm("xdoqgped");
 
   window.scrollTo(0,0)
   
@@ -36,14 +40,13 @@ export default function Contact() {
   const form = useRef();
     
   const sendEmail = (e) => {
-    e.preventDefault();
     
-    emailjs.sendForm(service_ID, template_ID, form.current, publicKey)
-    .then((result) => {
-      console.log(result.text);
-    }, (error) => {
-      console.log(error.text);
-    });
+    // emailjs.sendForm(service_ID, template_ID, form.current, publicKey)
+    // .then((result) => {
+    //   console.log(result.text);
+    // }, (error) => {
+    //   console.log(error.text);
+    // });
 
     setName('')
     setEmail('')
@@ -72,6 +75,9 @@ export default function Contact() {
     if(e.target.name === 'user_email') {
       setEmail(e.target.value)
     }
+    if(e.target.name === 'user_phone') {
+      setPhone(e.target.value)
+    }
     if(e.target.name === 'subject') {
       setSubject(e.target.value)
     }
@@ -79,11 +85,19 @@ export default function Contact() {
       setMessage(e.target.value) 
     }
   } 
-
+  if (state.succeeded) {
+    return <div className='body'>
+          <p className='form'> Thank you for reaching out, expect a Super Fast response!</p>
+          <Map className='location-map'/>   
+      </div>
+    ;
+}
+    
     return (
       <div className='body'>
 
-        <form ref={form} onSubmit={sendEmail} className='form'>
+        <form ref={form} onSubmit={handleSubmit} className='form'>
+          
 
           <div class= "container contact-location">
             <div class="select" >
@@ -117,6 +131,23 @@ export default function Contact() {
               /> 
           </label>
 
+              <ValidationError 
+                prefix="Email" 
+                field="email"
+                errors={state.errors}
+              />
+
+            <label for='phone'>Phone: 
+            <input 
+              type='text'
+              className='subject'
+              name='user_phone'
+              value={phone}
+              onChange={handleChange}
+              required='true'
+              /> 
+            </label>
+
           <label for='subject'>Subject: 
             <input 
               type='text'
@@ -138,7 +169,9 @@ export default function Contact() {
               required='true'
               /> 
           </label>
-          <input type="submit" className='submit' value="Send" />
+          <button type="submit" disabled={state.submitting}>
+              Submit
+          </button>
         </form>
 
      

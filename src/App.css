@@ -25,6 +25,7 @@ html {
 }
 
 .map {
+  z-index: 1;
   width: 70vw;
   border-radius: 10px;
 }
@@ -220,7 +221,7 @@ ul {
   justify-content: space-between;
   color: black;
   margin-bottom: 10px;
-  margin-left: 15vw;
+  margin-left: 10vw;
 }
 
 .action div h3 {
@@ -286,7 +287,7 @@ ul {
 
 .message {
   width: 90%;
-  height: 200px;
+  height: 150px;
 }
 
 label {
@@ -478,11 +479,11 @@ justify-content: flex-start;
 
 /* --------------------------------------------------------- Opening Image -----------------------------------------------------*/
 .image-container {
-  width: 100vw;
+  width: 90vw;
   height: 700px;
   margin-top: -40px;
   z-index: -1;
-  background-image: linear-gradient(0deg, rgba(24, 76, 89, 0.6), rgba(24, 76, 89, 0.6)),url('./assets/puget-sound.jpg');
+  background-image: linear-gradient(0deg, rgba(24, 76, 89, 0.6), rgba(24, 76, 89, 0.6)),url('./assets/MtVernonTaxServices.jpg');
   background-size: 100% 100%;
   display: flex;
   justify-content: center;
