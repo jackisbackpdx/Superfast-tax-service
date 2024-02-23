@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+// import emailjs from '@emailjs/browser';
 import { useForm, ValidationError } from '@formspree/react';
 
 
@@ -14,6 +15,7 @@ export default function Contact() {
   const [phone, setPhone] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+
   const [state, handleSubmit] = useForm("xdoqgped");
 
   window.scrollTo(0,0)
@@ -35,23 +37,36 @@ export default function Contact() {
 
   const form = useRef();
     
+  // const sendEmail = (e) => {
+    
+  //   // emailjs.sendForm(service_ID, template_ID, form.current, publicKey)
+  //   // .then((result) => {
+  //   //   console.log(result.text);
+  //   // }, (error) => {
+  //   //   console.log(error.text);
+  //   // });
 
+  //   setName('')
+  //   setEmail('')
+  //   setSubject('')
+  //   setMessage('')
+  // };
     
   const handleChange = (e) => {
-    // if(e.target.name === 'location') {
-    //   setLocation(e.target.value)
-    //   if(e.target.value === '(360) 424-5124') {
-    //     setService_ID('service_p1fzgbd');
-    //     setTemplate_ID('template_99swv0w');
-    //     setPublicKey('gx8lLP79wefnG8pRg');
-    //     Map = MtVernonMap;
-    //   }
-    //   if(e.target.value === '(509) 582-0320') {
-    //     setService_ID('service_zjkdxl5');
-    //     setTemplate_ID('template_j9j9qvi');
-    //     setPublicKey('NwTjMqLzW-XLMd845');
-    //   }
-    // } 
+    if(e.target.name === 'location') {
+      setLocation(e.target.value)
+      if(e.target.value === '(360) 424-5124') {
+        // setService_ID('service_p1fzgbd');
+        // setTemplate_ID('template_99swv0w');
+        // setPublicKey('gx8lLP79wefnG8pRg');
+        Map = MtVernonMap;
+      }
+      if(e.target.value === '(509) 582-0320') {
+        // setService_ID('service_zjkdxl5');
+        // setTemplate_ID('template_j9j9qvi');
+        // setPublicKey('NwTjMqLzW-XLMd845');
+      }
+    } 
     if(e.target.name === 'user_name') {
       setName(e.target.value)
     }
