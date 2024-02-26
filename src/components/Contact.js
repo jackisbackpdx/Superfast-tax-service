@@ -85,7 +85,7 @@ export default function Contact() {
   } 
   if (state.succeeded) {
     return <div className='body'>
-          <p className='form'> Thank you for reaching out, expect a Super Fast response!</p>
+          <p className='form'> Unfortunately messaging is unavailable at this time, please call your nearest office! Sorry for any inconvinience.</p>
           <Map className='location-map'/>   
       </div>
     ;
