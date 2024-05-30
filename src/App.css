@@ -59,7 +59,7 @@ html {
   padding: 0;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 800px) {
 
   .header-logo {
     justify-self: center;
@@ -195,11 +195,7 @@ ul {
   position: relative;
   border-radius: 10px;
   overflow: scroll;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   overflow-x: hidden;
-  padding-top: 5px;
   box-shadow: -5px 7px 5px 0px rgba(0,0,0,0.75);
   transition: .2s
 }
@@ -558,3 +554,105 @@ justify-content: flex-start;
   color: blue;
 }
 
+
+@media screen and ( max-width: 1000px) and ( min-width: 481px ) {
+
+  .phone {
+    width: 50px;
+    height: 125px;
+  }
+  .select {
+    width: 15vw;
+    margin-left: 5px;
+  }
+  .services {
+    width:90%;
+  }
+  .map {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .button-link-review {
+    margin-right: 5vw;
+  }
+  .action {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .review-h3 {
+    margin-right: 5vw;
+    text-wrap: nowrap;
+    width: auto;
+  }
+ 
+  .header-logo {
+    margin-left: 41vw;
+  }
+  .image-container h1 p {
+    width: 500px;
+  }
+
+
+  .call {
+    width: 100vw;
+    background-color: rgba(153, 153, 153, .5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    left: 0;
+    border-radius: 10px;
+    color: black;
+  }
+  
+  .reviews {
+    width: 100vw;
+    height: 190px;
+    background-color: rgba(153, 153, 153, .5);
+    color:black;
+    position: relative;
+    border-radius: 10px;
+    overflow: scroll;
+  }
+
+  .review-card {
+    width: 90%;
+  }
+  
+  .phone {
+    height: 150px;
+    width: 85px;
+    align-self: center;
+  }
+  
+  .action {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: space-between;
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+  
+  .action div h3 {
+    margin-top: 40px;
+  }
+
+  .dropdown {
+    margin-top: 10px;
+    margin-right: 10px;
+    color: black;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #label {
+    margin-right: 5px;
+  }
+  
+  .actual-number {
+    text-decoration: none;
+    padding: 0;
+  }
+}
