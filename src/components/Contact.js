@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react'
 import { useForm, ValidationError } from '@formspree/react';
 
 
-import MtVernonMap from '../maps/MtVernonMap'
+import MtVernonMap from '../maps/MtVernonMap';
 import EverettMap from '../maps/EverettMap';
 import WallaWallaMap from '../maps/WallaWallaMap';
 
@@ -167,7 +167,7 @@ export default function Contact() {
               required='true'
               /> 
           </label>
-          <button type="submit" disabled={state.submitting}>
+          <button type="submit" disabled='true'>
               Submit
           </button>
         </form>

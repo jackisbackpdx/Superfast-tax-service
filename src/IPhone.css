@@ -98,6 +98,7 @@
         border-radius: 10px;
         overflow: scroll;
       }
+     
 
       .button-link-review {
         margin-left: -4vw;
@@ -122,6 +123,9 @@
         color: black;
         margin-bottom: 20px;
         margin-left: 0px;
+      }
+      .call {
+        min-height: 230px!important;
       }
       
       .action div h3 {
