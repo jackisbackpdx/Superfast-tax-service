@@ -160,10 +160,10 @@ export default function Contact() {
           <label for='message'>Message: 
             <textarea 
               type='text'
+              disabled='true'
               className='message'
               name='message'
-              value={message}
-              onChange={handleChange}
+              value='Unfortunately this feature is unavailable at this time. Please reach out to your nearest office via phone to ensure speedy service!'
               required='true'
               /> 
           </label>
