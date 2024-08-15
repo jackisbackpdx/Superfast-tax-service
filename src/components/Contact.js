@@ -14,7 +14,7 @@ export default function Contact() {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
+  // const [message, setMessage] = useState('');
 
   const [state, handleSubmit] = useForm("xdoqgped");
 
@@ -79,9 +79,9 @@ export default function Contact() {
     if(e.target.name === 'subject') {
       setSubject(e.target.value)
     }
-    if(e.target.name ===  'message') {
-      setMessage(e.target.value) 
-    }
+    // if(e.target.name ===  'message') {
+    //   setMessage(e.target.value) 
+    // }
   } 
   if (state.succeeded) {
     return <div className='body'>
