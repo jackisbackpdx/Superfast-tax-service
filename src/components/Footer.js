@@ -9,7 +9,7 @@ export default function Footer() {
                 <img className='facebook-logo' src={require('../assets/facebook-logo.png')} alt='go to facebook page'/>
             </a>
             <div className='line'></div>
-            <p>&copy;2023 superfasttaxservice.com</p>
+            <p>&copy;2025 superfasttaxservice.com</p>
         </div>
     </div>
   )
